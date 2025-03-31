@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip</title>
+    <style>
+        body {
+            background-color: slategray;
+        }
+        h1 {
+            color: transparent;
+            background-image: url(images/mountain.jpg);
+            font-size: 100px;
+            font-family: Impact;
+            -webkit-background-clip: text;
+        }
+        #box {
+            border: 10px dotted black;
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            color: black;
+            background-color: antiquewhite;
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Background Clip</h1>
+    <div id="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe tempora ipsum consequatur doloribus enim, quasi dolorum doloremque. Doloribus voluptates cupiditate ullam voluptatem ab est quibusdam et, magni culpa, veniam incidunt.
+    </div>
+</body>
+</html>

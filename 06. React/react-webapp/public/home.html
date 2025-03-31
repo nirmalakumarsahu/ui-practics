@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <script type="text/babel">
+        //Login Component
+        const Login = () => (
+                <div>
+                    <h2>Login Page</h2>
+                    <form action="/login" method="post">
+                        <label for="username">Username: </label><br />
+                        <input id="username" type="text" name="username"/><br/>
+                        <label for="password">Password: </label><br />
+                        <input id="password" type="password" name="password"/><br/>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+        );
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<Login/>);
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

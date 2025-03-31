@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var function</title>
+    <style>
+        :root {
+            --main-color: yellow;
+            --head-font: arial;
+
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: slategray;
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            border: 1px solid black;
+            width: 1000px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        #header {
+            background-color: crimson;
+            height: 50px;
+            text-align: center;
+            font-family: var(--head-font);
+        }
+        #menu {
+            background-color: var(--main-color);
+        }
+        #menu ul {
+            padding: 0;
+            margin: 0;
+        }
+        #menu li {
+            display: inline-block;
+            padding: 10px 10px;
+        }
+        #content {
+            width: 800px;
+            min-height: 500px;
+            float: left;
+        }
+        #sidebar {
+            background-color: var(--main-color);
+            min-height: 500px;
+            width: 200px;
+            float: right;
+        }
+        #footer {
+            background-color: var(--main-color);
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Our Website</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>Design Basic Layout</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos magni voluptatem laudantium incidunt aperiam quod aliquid, quas fugit itaque, quo, consequuntur nulla neque corrupti repudiandae voluptatum. Quidem, doloremque sit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, cumque vitae recusandae voluptate in nihil. Ab itaque possimus, unde a dolores laudantium laboriosam, odio debitis dignissimos ducimus sunt voluptate. Odit!</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            sahu@copyright 2022
+        </div>
+        <div></div>
+    </div>
+</body>
+</html>

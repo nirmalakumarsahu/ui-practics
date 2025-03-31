@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table layout</title>
+    <style>
+        table {
+            width: 250px;
+            /* border-spacing: 20px; */
+            border-collapse: collapse;
+        }
+        table, td, th {
+            border: 1px solid black;
+        }
+        td {
+            vertical-align: top;
+        }
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Table Layout properties</h1>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohan Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ratione.</td>
+            <td>Kumar</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Salim</td>
+            <td>Khan</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Inder</td>
+            <td>Singh</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+</body>
+</html>
